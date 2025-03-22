@@ -8,7 +8,7 @@ X = data[:, :-1]  # 特征矩阵（排除最后一列）
 y = data[:, -1]   # 目标变量（MEDV）
 
 # 2. 手动划分训练集和测试集（8:2比例）
-np.random.seed(42)  # 固定随机种子
+np.random.seed(40)  # 固定随机种子
 indices = np.random.permutation(len(X))
 train_size = int(0.8 * len(X))
 X_train, y_train = X[indices[:train_size]], y[indices[:train_size]]
